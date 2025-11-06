@@ -1,70 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Green Earth</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Green Earth</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">Green Earth</div>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-left">Green Earth</div>
-
-    <div class="navbar-center">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#tree">Tree</a></li>
-      </ul>
-    </div>
-
-    <div class="navbar-right">
-      <button>Plant a Tree</button>
-    </div>
-  </nav>
-
-  <!-- Banner -->
-  <section class="banner">
-    <img src="images/hero-leaf1.png" alt="Left Image" class="banner-left" />
-    <div class="banner-center">
-      <h1>Plant a Tree, Grow a Future</h1>
-      <p>Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
-      <button>Get Involved</button>
-    </div>
-    <img src="images/hero-leaf2.png" alt="Right Image" class="banner-right" />
-  </section>
-
-  <!-- Tree Selection Section -->
-  <section id="choose-trees" style="padding:50px 0; background-color:#f7fff7;">
-    <h1>Choose Your Trees</h1>
-
-    <div class="main-content">
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <h2>Categories</h2>
-        <div class="categories-list">
-          <!-- Categories dynamically inserted here -->
-        </div>
+      <div class="navbar-center">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#tree">Tree</a></li>
+        </ul>
       </div>
 
-      <!-- Product List -->
-      <div class="product-list-container"></div>
+      <div class="navbar-right">
+        <button>Plant a Tree</button>
+      </div>
+    </nav>
 
-      <!-- Cart Sidebar -->
-      <div class="cart-sidebar">
-        <h2>Your Cart</h2>
-        <div id="cart-items"></div>
-        <div class="cart-total">
-          <span>Total:</span>
-          <span id="cart-total-price">৳0</span>
+    <!-- Banner -->
+    <section class="banner">
+      <img src="images/hero-leaf1.png" alt="Left Image" class="banner-left" />
+      <div class="banner-center">
+        <h1>Plant a Tree, Grow a Future</h1>
+        <p>
+          Join our mission to plant 1 million trees and make the Earth greener
+          for future generations.
+        </p>
+        <button>Get Involved</button>
+      </div>
+      <img src="images/hero-leaf2.png" alt="Right Image" class="banner-right" />
+    </section>
+
+    <!-- Tree Selection Section -->
+    <section
+      id="choose-trees"
+      style="padding: 50px 0; background-color: #f7fff7"
+    >
+      <h1>Choose Your Trees</h1>
+
+      <div class="main-content">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <h2>Categories</h2>
+          <div class="categories-list">
+            <!-- Categories dynamically inserted here -->
+          </div>
+        </div>
+
+        <!-- Product List -->
+        <div class="product-list-container"></div>
+
+        <!-- Cart Sidebar -->
+        <div class="cart-sidebar">
+          <h2>Your Cart</h2>
+          <div id="cart-items"></div>
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">৳0</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Script -->
-  <script src="script.js"></script>
-</body>
+    <section class="about-campaign">
+      <div class="container">
+        <h2 class="section-title">About the Campaign</h2>
+
+        <div class="content-row">
+          <div class="image-column">
+            <img
+              src="images/about.png"
+              alt="A green plant representing the Earth Earth initiative"
+            />
+          </div>
+
+          <div class="text-column">
+            <p>
+              Green Earth is a global tree
+              plantation initiative dedicated to fighting climate change. We
+              believe we can start, one tree at a time. Our goal is to plant 100
+              million trees, empowering individuals like you to make a tangible
+              difference. Together, we can create habitats for wildlife, and
+              combat global warming.
+            </p>
+            <ul>
+              <li>Restoration of natural habitats</li>
+              <li>Combating climate change</li>
+              <li>Support for local communities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
