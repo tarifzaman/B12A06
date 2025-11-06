@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Green Earth</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-left">Green Earth</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Green Earth</title>
+</head>
+<body>
 
-      <div class="navbar-center">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#tree">Tree</a></li>
-        </ul>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">Green Earth</div>
+
+    <div class="navbar-center">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#tree">Tree</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-right">
+      <button>Plant a Tree</button>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="images/hero-leaf1.png" alt="Left Image" class="banner-left" />
+    <div class="banner-center">
+      <h1>Plant a Tree, Grow a Future</h1>
+      <p>Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+      <button>Get Involved</button>
+    </div>
+    <img src="images/hero-leaf2.png" alt="Right Image" class="banner-right" />
+  </section>
+
+  <!-- Tree Selection Section -->
+  <section id="choose-trees" style="padding:50px 0; background-color:#f7fff7;">
+    <h1>Choose Your Trees</h1>
+
+    <div class="main-content">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h2>Categories</h2>
+        <div class="categories-list">
+          <!-- Categories dynamically inserted here -->
+        </div>
       </div>
 
-      <div class="navbar-right">
-        <button>Plant a Tree</button>
-      </div>
+      <!-- Product List -->
+      <div class="product-list-container"></div>
 
-      <div class="navbar-toggle">&#9776;</div>
-    </nav>
-
-    <section class="banner">
-      <img src="images/hero-leaf1.png" alt="Left Image" class="banner-left" />
-      <div class="banner-center">
-        <h1>Plant a Tree, Grow a Future</h1>
-        <p>
-          Join our mission to plant 1 million trees and make the Earth greener
-          for future generations.
-        </p>
-        <button>Get Involved</button>
+      <!-- Cart Sidebar -->
+      <div class="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">৳0</span>
+        </div>
       </div>
-      <img src="images/hero-leaf2.png" alt="Right Image" class="banner-right" />
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
 </html>
